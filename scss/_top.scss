@@ -8,3 +8,73 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    color: var(--text);
+    line-height: 2;
+    font-family: "Lora","Noto Sans JP", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* ヘッダーハンバーガーメニュー */
+.header-btn{
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 100;
+    
+}
+
+.header-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary);
+    transition: .3s;
+}
+
+.header-btn span:first-of-type{
+    top: 0;
+}
+.header-btn span:nth-of-type(2){
+    top: 50%;
+}
+.header-btn span:last-of-type{
+    top: 100%;
+}
+
+.header-btn.active span:first-of-type{/* ハンバーガーメニューの1番目の線 */
+    top: 50%;
+    transform: rotate(45deg);
+    background-color: var(--primary);
+}
+.header-btn.active span:nth-of-type(2){/* ハンバーガーメニューの2番目の線 */
+    opacity: 0;/* 透明にする */
+}
+.header-btn.active span:last-of-type{/* ハンバーガーメニューの3番目の線 */
+    top: 50%;
+    transform: rotate(-45deg);
+    background-color: var(--primary);
+}
+.header-nav.active{
+    transform: translateX(0); 
+}
+
