@@ -399,4 +399,47 @@ ol {
      object-fit: cover;
   top: 0;
   left: 0;
+}
+
+.charm__container__heading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 64px;
+}
+.charm__container__list__item {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.charm__container__list__logo {
+  width: 70px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+.charm__container__list__text h3 {
+  font-size: 1rem;
+}
+.charm__container__list__text p {
+  font-size: 0.8rem;
+}
+
+.charm__caption {
+  margin-top: 40px;
+}
+.charm__caption img {
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .charm__main {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: auto;
+    gap: min(8.0357142857vw, 90px);
+  }
+  .charm__caption img {
+    width: 400px;
+  }
 }/*# sourceMappingURL=style.min.css.map */
