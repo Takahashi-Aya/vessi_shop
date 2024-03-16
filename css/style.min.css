@@ -375,7 +375,7 @@ ol {
   }
   .description__caption img {
     width: 400px;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 }
 .bg-inbetween {
@@ -404,17 +404,17 @@ ol {
 .charm__container__heading {
   text-align: center;
   font-size: 1.2rem;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
 .charm__container__list__item {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   align-items: center;
 }
 .charm__container__list__logo {
   width: 70px;
   flex-shrink: 0;
-  margin-right: 16px;
+  margin-right: 24px;
 }
 .charm__container__list__text h3 {
   font-size: 1rem;
@@ -423,9 +423,6 @@ ol {
   font-size: 0.8rem;
 }
 
-.charm__caption {
-  margin-top: 40px;
-}
 .charm__caption img {
   border-radius: 20px;
 }
@@ -437,9 +434,46 @@ ol {
     flex-direction: row-reverse;
     justify-content: center;
     height: auto;
-    gap: min(8.0357142857vw, 90px);
+    gap: min(8.0357142857vw, 40px);
+  }
+  .charm__container__list {
+    margin: auto;
+    margin-left: 40px;
+  }
+  .charm__container__list__item {
+    margin-bottom: 24px;
+  }
+  .charm__container__list__text h3 {
+    font-size: 1.1rem;
+  }
+  .charm__container__list__text p {
+    font-size: 0.9rem;
+  }
+  .charm__caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .charm__caption img {
     width: 400px;
+    height: auto;
   }
+  .charm__container__secondary {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: min(8.0357142857vw, 40px);
+  }
+  .charm__container__menu {
+    margin: auto;
+  }
+}
+.product__container__head {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.product__container__lead {
+  font-size: 0.8rem;
+  text-align: center;
 }/*# sourceMappingURL=style.min.css.map */

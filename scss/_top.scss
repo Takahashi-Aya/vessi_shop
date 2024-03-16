@@ -402,7 +402,7 @@ ol {
     .description__caption{
         img{
             width: 400px;
-            margin-left: 40px;
+            margin-left: 20px;
         }
     }
 }
@@ -436,19 +436,18 @@ ol {
     &__heading{
         text-align: center;
         font-size: 1.2rem;
-        margin-bottom: 64px;
+        margin-bottom: 48px;
     }
     &__list{
         &__item{
             display: flex;
-            margin-bottom: 24px;
+            margin-bottom: 40px;
             align-items: center;
-            // gap: 16px;
         }
         &__logo{
             width: 70px;
             flex-shrink: 0;
-            margin-right: 16px;
+            margin-right: 24px;
         }
         &__text{
 
@@ -462,8 +461,6 @@ ol {
     }
 }
 .charm__caption{
-    margin-top: 40px;
-    
     img{
         border-radius: 20px;
     }
@@ -476,61 +473,52 @@ ol {
         flex-direction: row-reverse;
         justify-content: center;
         height: auto;
-        gap: min(8.0357142857vw, 90px);
+        gap: min(8.0357142857vw, 40px);
+    }
+    .charm__container__list{
+        margin: auto;
+        margin-left: 40px;
+        &__item{
+            margin-bottom: 24px;
+        }
+        &__text{
+            h3{
+                font-size: 1.1rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
     }
     .charm__caption{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img{
             width: 400px;
+            height: auto;
         }
+    }
+    .charm__container__secondary{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        gap: min(8.0357142857vw, 40px);
+    }
+    .charm__container__menu{
+        margin: auto;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-// .charm__container{
-//     &__primary{
-//         display: flex;
-//     }
-//     &__heading{
-//         text-align: center;
-//         font-size: 1.2rem;
-//         margin-bottom: 64px;
-//     }
-//     &__list{
-//         &__item{
-//             align-items: center;
-//             display: flex;
-//             gap: 40px;
-//             justify-content: center;
-//             margin-bottom: 40px;
-//         }
-//         &__logo{
-//             flex: 1;
-//             height: auto;
-//             max-width: 70px;
-//             width: 6.25vw;
-//         }
-//         &__logo img{
-//             height: auto;
-//             width: 100%;
-//         }
-//         &text{
-//             flex: 1;
-//         }
-//     }
-// }
-// .charm__caption{
-//     img{
-//         width: 400px;
-//         margin-left: 40px;
-//         border-radius: 20px;
-//     }
-// }
+// Product
+.product__container{
+    &__head{
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &__lead{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
