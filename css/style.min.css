@@ -468,12 +468,67 @@ ol {
     margin: auto;
   }
 }
+.product__container {
+  max-width: 1200px;
+  margin: 80px 24px;
+}
 .product__container__head {
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 48px;
 }
 .product__container__lead {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
+  margin-bottom: 56px;
+}
+.product__container__list {
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  display: grid;
+  gap: min(3.125vw, 35px);
+  margin: 32px 0;
+}
+.product__container__list__item {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.product__container__list__feature {
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+}
+.product__container__list__caption {
+  flex: 1;
+  margin-bottom: 32px;
+}
+.product__container__list__title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.product__container__list__text {
+  text-align: left;
+}
+
+.btn-buy {
+  background-color: #fff;
+  color: var(--text);
+  border-radius: 32px;
+  margin-bottom: 24px;
+  padding: min(2.1333333333vw, 16px) 0;
+}
+
+.btn-other {
+  background-color: var(--primary);
+  border-radius: 8px;
+  text-align: center;
+  padding: 4px 0;
+}
+.btn-other a {
+  color: #fff;
 }/*# sourceMappingURL=style.min.css.map */
