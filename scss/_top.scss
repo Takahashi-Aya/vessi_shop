@@ -511,64 +511,65 @@ ol {
 }
 
 // Product
-.product__container{
+.product{
     max-width: 1200px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // padding-left: 5%;
-    // padding-right: 5%;
     margin: 80px 24px;
-    &__head{
-        font-size: 1.1rem;
-        text-align: center;
-        margin-bottom: 48px;
-    }
-    &__lead{
-        font-size: 0.9rem;
-        text-align: center;
-        margin-bottom: 56px;
-    }
-    &__list{
-        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-        display: grid;
-        gap: min(3.125vw, 35px);
-        margin: 32px 0;
-
-        &__item{
-            background-color: var(--secondary);
-            border-radius: 20px;
-            margin-bottom: 32px;
-            display: flex;
-            flex-direction: column;
+    &__container{
+        &__head{
+            font-size: 1.1rem;
             text-align: center;
-            padding-left: 24px;
-            padding-right: 24px;
+            margin-bottom: 48px;
         }
-        &__feature{
-            width: 100%;
-            max-width: 220px;
-            margin: 0 auto;
-        }
-        &__caption{
-            flex: 1;
-            margin-bottom: 32px;
-        }
-        &__title{
-            margin-bottom: 8px;
+        &__lead{
+            font-size: 0.9rem;
             text-align: center;
+            margin-bottom: 56px;
         }
-        &__text{
-            text-align: left;
+        &__list{
+            grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+            display: grid;
+            gap: min(3.125vw, 35px);
+            margin: 32px 0;
+    
+            &__item{
+                background-color: var(--secondary);
+                border-radius: 20px;
+                margin-bottom: 32px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            &__feature{
+                width: 100%;
+                max-width: 220px;
+                margin: 0 auto;
+            }
+            &__caption{
+                flex: 1;
+                margin-bottom: 32px;
+            }
+            &__title{
+                margin-bottom: 8px;
+                text-align: center;
+            }
+            &__text{
+                text-align: left;
+            }
         }
     }
 }
-
 .btn-buy{
     background-color: #fff;
     color: var(--text);
     border-radius: 32px;
     margin-bottom: 24px;
     padding: min(2.1333333333vw, 16px) 0;
+}
+.btn-buy:hover{
+    background-color: var(--text);
+    color: #fff;
 }
 .btn-other{
     background-color: var(--primary);
@@ -577,5 +578,170 @@ ol {
     padding: 4px 0;
     a{
         color: #fff;
+    }
+}
+
+@include mq{
+    .product__container{
+        &__list{
+            display: grid;
+            gap: min(3.125vw, 35px);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin: 56px 0;
+            &__title{
+                font-size: 1.2rem;
+            }
+        }
+        &__head{
+            font-size: 1.3rem;
+        }
+        &__lead{
+            font-size: 1.1rem;
+        }
+    }
+    .btn-other{
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+
+// FAQ
+.faq{
+    background-color: var(--secondary);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    &__container{
+        max-width: 1200px;
+        &__header{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        &__list__item{
+            margin-bottom: 32px;
+        }
+        &__other{
+            text-align: center;
+        }
+    }
+}
+.faq-text {
+    display: flex;
+    align-items: baseline;
+}
+
+.faq-text + .faq-text {
+    margin-top: 8px;
+}
+
+.faq-text::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.faq-text--question{
+    margin-bottom: 8px;
+}
+.faq-text--question::before {
+    content: "Q";
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.faq-text--answer::before {
+    content: "A";
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: #fff;
+    flex-shrink: 0;
+}
+@include mq{
+    .faq{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    .faq__container{
+        &__header{
+            margin-bottom: 64px;
+            margin-top: 36px;
+        }
+        &__list{
+            text-align: left;
+            &__item{
+                margin-bottom: 48px;
+            }
+        }
+    }
+    .faq-text--answer{
+        font-size: 0.9rem;
+    }
+    .faq-text--question{
+        font-size: 1.1rem;
+    }
+}
+
+// attention
+.attention{
+    &__inner{
+        background: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .3)), url(../img/Weekend_MarbleWhite5.jpg) no-repeat center center / cover;
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+    &__text{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+}
+@include mq{
+    .attention__text{
+        font-size: 0.95rem;
+    }
+}
+
+// footer
+.footer__container{
+    background-color: var(--primary);
+    &__logo img{
+        height: 200px;
+        width: auto;
+        margin: 0 auto;
+    }
+    &__text{
+        text-align: center;
+        padding-bottom: 48px;
+    }
+    &__list{
+        padding-bottom: 32px;
+        a{
+            display: inline;
+            color: #fff;
+        }
+    }
+    &__list a:first-child{
+        margin-right: 24px;
+    }
+}
+.copyright{
+    color: #fff;
+    font-size: 0.7rem;
+}
+@include mq{
+    .footer__container__text{
+        padding-bottom: 24px;
     }
 }

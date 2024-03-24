@@ -468,7 +468,7 @@ ol {
     margin: auto;
   }
 }
-.product__container {
+.product {
   max-width: 1200px;
   margin: 80px 24px;
 }
@@ -523,6 +523,11 @@ ol {
   padding: min(2.1333333333vw, 16px) 0;
 }
 
+.btn-buy:hover {
+  background-color: var(--text);
+  color: #fff;
+}
+
 .btn-other {
   background-color: var(--primary);
   border-radius: 8px;
@@ -531,4 +536,164 @@ ol {
 }
 .btn-other a {
   color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+  .product__container__list {
+    display: grid;
+    gap: min(3.125vw, 35px);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: 56px 0;
+  }
+  .product__container__list__title {
+    font-size: 1.2rem;
+  }
+  .product__container__head {
+    font-size: 1.3rem;
+  }
+  .product__container__lead {
+    font-size: 1.1rem;
+  }
+  .btn-other {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+.faq {
+  background-color: var(--secondary);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.faq__container {
+  max-width: 1200px;
+}
+.faq__container__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.faq__container__list__item {
+  margin-bottom: 32px;
+}
+.faq__container__other {
+  text-align: center;
+}
+
+.faq-text {
+  display: flex;
+  align-items: baseline;
+}
+
+.faq-text + .faq-text {
+  margin-top: 8px;
+}
+
+.faq-text::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.faq-text--question {
+  margin-bottom: 8px;
+}
+
+.faq-text--question::before {
+  content: "Q";
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.faq-text--answer::before {
+  content: "A";
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .faq {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .faq__container__header {
+    margin-bottom: 64px;
+    margin-top: 36px;
+  }
+  .faq__container__list {
+    text-align: left;
+  }
+  .faq__container__list__item {
+    margin-bottom: 48px;
+  }
+  .faq-text--answer {
+    font-size: 0.9rem;
+  }
+  .faq-text--question {
+    font-size: 1.1rem;
+  }
+}
+.attention__inner {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.3)), url(../img/Weekend_MarbleWhite5.jpg) no-repeat center center/cover;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.attention__text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 600px) {
+  .attention__text {
+    font-size: 0.95rem;
+  }
+}
+.footer__container {
+  background-color: var(--primary);
+}
+.footer__container__logo img {
+  height: 200px;
+  width: auto;
+  margin: 0 auto;
+}
+.footer__container__text {
+  text-align: center;
+  padding-bottom: 48px;
+}
+.footer__container__list {
+  padding-bottom: 32px;
+}
+.footer__container__list a {
+  display: inline;
+  color: #fff;
+}
+.footer__container__list a:first-child {
+  margin-right: 24px;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 600px) {
+  .footer__container__text {
+    padding-bottom: 24px;
+  }
 }/*# sourceMappingURL=style.min.css.map */
