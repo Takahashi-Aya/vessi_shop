@@ -255,7 +255,7 @@ ol {
   margin-right: auto;
   padding-left: 5%;
   padding-right: 5%;
-  margin: 80px 24px;
+  margin: 80px auto;
 }
 
 .introduction__head {
@@ -470,7 +470,7 @@ ol {
 }
 .product {
   max-width: 1200px;
-  margin: 80px 24px;
+  margin: 80px auto;
 }
 .product__container__head {
   font-size: 1.1rem;
@@ -495,8 +495,8 @@ ol {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .product__container__list__feature {
   width: 100%;
@@ -513,6 +513,7 @@ ol {
 }
 .product__container__list__text {
   text-align: left;
+  line-height: 1.5em;
 }
 
 .btn-buy {
@@ -643,7 +644,7 @@ ol {
   }
 }
 .attention__inner {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.3)), url(../img/Weekend_MarbleWhite5.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.3)), url(../img/Weekend_MarbleWhite5.webp) no-repeat center center/cover;
   text-align: center;
   width: 100%;
   height: 400px;
