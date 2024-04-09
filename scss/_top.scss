@@ -196,10 +196,15 @@ ol {
     }
 }
 
-.mv{
+.site-header{
     height: 80vh;
+    position: relative;
+}
+
+.mv{
+    height: 100%;
     width: 100%;
-    top: 56px;
+
 
     // slick
     .slick-list,
@@ -216,13 +221,14 @@ ol {
     img{
         object-fit: cover;
         object-position: center center;
+        height: 100%;
     }
 }
 
 .mv-title{
     position: absolute;
     z-index: 1;
-    bottom: 25%;
+    bottom: 10%;
     h1{
         color: var(--primary);
         text-align: left;

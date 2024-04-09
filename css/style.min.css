@@ -202,10 +202,14 @@ ol {
     width: 450px;
   }
 }
-.mv {
+.site-header {
   height: 80vh;
+  position: relative;
+}
+
+.mv {
+  height: 100%;
   width: 100%;
-  top: 56px;
 }
 .mv .slick-list,
 .mv .slick-track {
@@ -222,12 +226,13 @@ ol {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+  height: 100%;
 }
 
 .mv-title {
   position: absolute;
   z-index: 1;
-  bottom: 25%;
+  bottom: 10%;
 }
 .mv-title h1 {
   color: var(--primary);
